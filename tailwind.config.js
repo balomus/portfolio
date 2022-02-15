@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./build/index.html"],
+  content: ["./index.html"],
   theme: {
     extend: {
       backgroundImage: {

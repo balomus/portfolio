@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/main.css -o ./build/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/balomus/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/balomus/portfolio/issues"
+  },
+  "homepage": "https://github.com/balomus/portfolio#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.0.22"
+  }
+}

@@ -10,6 +10,7 @@
     <!-- Imports -->
     <link rel="stylesheet" href="build/main.css">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons@6.10.0/index.min.js"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" />
     <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" /> -->
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,6 +30,9 @@
                 <a href="#portfolio">Portfolio</a>
             </li>
             <li class="mx-6 hover:text-gray-400 float-right">
+                <a href="#skills">Skills</a>
+            </li>
+            <li class="mx-6 hover:text-gray-400 float-right">
                 <a href="#contact">Contact</a>
             </li>
         </ul>
@@ -38,24 +42,43 @@
         </div>
     </div>
 
-    <div id="about" class="py-10">
+    <div id="about" class="py-10 container mx-auto px-30 xl:px-60">
         <div class="">
             
             <h2 class="text-4xl text-center">About me</h2>
-            <img src="https://res.cloudinary.com/dbnugenbb/image/upload/v1644961985/Stephen_square.jpg" alt="Photo of Stephen Mercier" class="rounded-full float-left w-1/4 p-10">
-            <p class="text-lg">My name is Stephen. I am a web developer, gamer, hiker, and husband.</p>
-            <p class="text-lg">Here are some of the technologies I'm familiar with:</p>
-            <div class="text-6xl">
-                <i class="fa-brands fa-react"></i> React.js
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-1 items-center justify-items-center">
+                <img src="https://res.cloudinary.com/dbnugenbb/image/upload/v1644961985/Stephen_square.jpg" alt="Photo of Stephen Mercier" class="rounded-full p-10 row-span-3">
+                <!-- <img src="https://res.cloudinary.com/dbnugenbb/image/upload/v1644961985/Stephen_square.jpg" alt="Photo of Stephen Mercier" class="rounded-full float-left w-1/4 p-10"> -->
+                <p class="text-lg col-span-2">My name is Stephen. I am a web developer and have always been passionate about learning technologies and skills. I'm a tinkerer at heart, so I'm always learning something new.</p>
+                <p class="text-lg col-span-2">I have over 10 years of experience in Information Technology, and have a broad understandings of various IT technology stacks and how they interoperate.</p>
+                <p class="text-lg col-span-2">In my spare time, I can usually be found working on some personal project, playing video games, or hiking in the beautiful Smoky Mountains.</p>
             </div>
         </div>
     </div>
 
-    <div id="portfolio" class="py-10 bg-gray-400">
+    <div id="skills" class="py-10 bg-gray-400">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-1 items-center justify-items-center container mx-auto px-30 xl:px-60">
+            <p class="text-4xl col-span-1 md:col-span-2 text-center">Skills</p>
+            <ul class="text-2xl">
+                <li><img height="32" width="32" class="float-left mx-2" src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/html5.svg"/>HTML5<br/></li>
+                <li><img height="32" width="32" class="float-left mx-2" src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/css3.svg"/>CSS3<br/></li>
+                <li><img height="32" width="32" class="float-left mx-2" src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/javascript.svg"/>JavaScript<br/></li>
+                <li><img height="32" width="32" class="float-left mx-2" src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/git.svg"/>Git<br/></li>
+            </ul>
+            <ul class="text-2xl">
+                <li><img height="32" width="32" class="float-left mx-2" src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/react.svg"/>React.js<br/></li>
+                <li><img height="32" width="32" class="float-left mx-2" src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/redux.svg"/>Redux<br/></li>
+                <li><img height="32" width="32" class="float-left mx-2" src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/bootstrap.svg"/>Bootstrap<br/></li>
+                <li><img height="32" width="32" class="float-left mx-2" src="https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/tailwindcss.svg"/>TailwindCSS<br/></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="portfolio" class="py-10">
         portfolio
     </div>
 
-    <div id="contact" class="py-10">
+    <div id="contact" class="py-10 bg-gray-400">
         contact
     </div>
 

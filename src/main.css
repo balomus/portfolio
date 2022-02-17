@@ -2,12 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  h1 {
+    @apply text-8xl m-2;
+  }
+  h2 {
+    @apply text-4xl text-center pb-10;
+  }
+  h3 {
+    @apply text-4xl m-2;
+  }
+  p {
+    @apply text-lg;
+  }
+  section, main {
+    @apply pt-10;
+  }
+}
+
 @layer components {
   .card {
     background-color: theme('colors.white');
     border-radius: theme('borderRadius.lg');
     padding: theme('spacing.6');
     box-shadow: theme('boxShadow.xl');
-    @apply text-center text-black text-xl;
+    @apply text-center text-black text-xl border-gray-200 border-2;
+  }
+  .navbar {
+    @apply flex justify-center w-full bg-black bg-opacity-50 py-2 text-lg;
+  }
+  .navbar-item {
+    @apply mx-6 hover:text-gray-400 float-right;
+  }
+  .home {
+    @apply h-screen bg-center bg-cover bg-home-image text-white;
+  }
+  .home-text {
+    @apply flex flex-col justify-center items-center h-5/6 text-center;
+  }
+  .about {
+    @apply py-10 container mx-auto px-32 xl:px-60;
+  }
+  .about-grid {
+    @apply grid grid-cols-1 md:grid-cols-3 gap-1 items-center justify-items-center;
+  }
+  .round-image {
+    @apply rounded-full p-10 row-span-1 md:row-span-3 drop-shadow-xl;
   }
 }

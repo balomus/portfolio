@@ -10,67 +10,57 @@
     <!-- Imports -->
     <link rel="stylesheet" href="build/main.css">
 
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons@6.10.0/index.min.js"/> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" /> -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> -->
     <!-- END Imports -->
 </head>
 
 <body>
-    <!-- <div class="h-screen bg-gradient-to-r from-cyan-500 to-blue-500" id="home"> -->
-    <div id="home" class="h-screen bg-center bg-cover bg-home-image text-white">
-        <ul class="flex justify-center w-full bg-black bg-opacity-50 py-2 text-lg">
-            <li class="mx-6 hover:text-gray-400 float-right">
+    <header id="home" class="home">
+        <ul class="navbar">
+            <li class="navbar-item">
                 <a href="#about">About</a>
             </li>
-            <li class="mx-6 hover:text-gray-400 float-right">
+            <li class="navbar-item">
                 <a href="#skills">Skills</a>
             </li>
-            <li class="mx-6 hover:text-gray-400 float-right">
+            <li class="navbar-item">
                 <a href="#portfolio">Portfolio</a>
             </li>
-            <li class="mx-6 hover:text-gray-400 float-right">
+            <li class="navbar-item">
                 <a href="#contact">Contact</a>
             </li>
         </ul>
-        <div class="flex flex-col justify-center items-center h-5/6 text-center">
-            <h1 class="text-8xl m-2">Stephen Mercier</h1>
-            <h3 class="text-4xl m-2">Web Developer</h3>
+        <div class="home-text">
+            <h1>Stephen Mercier</h1>
+            <h3>Web Developer</h3>
         </div>
-    </div>
+    </header>
 
-    <div id="about" class="py-10 container mx-auto px-30 xl:px-60">
-        <div class="">
-
-            <h2 class="text-4xl text-center">About me</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-1 items-center justify-items-center">
-                <img src="https://res.cloudinary.com/dbnugenbb/image/upload/v1644961985/Portfolio/Stephen_square.jpg"
-                    alt="Photo of Stephen Mercier" class="rounded-full p-10 row-span-1 md:row-span-3">
-                <!-- <img src="https://res.cloudinary.com/dbnugenbb/image/upload/v1644961985/Stephen_square.jpg" alt="Photo of Stephen Mercier" class="rounded-full float-left w-1/4 p-10"> -->
-                <p class="text-lg col-span-2">My name is Stephen. I am a web developer and have always been passionate
-                    about learning technologies and skills. I'm a tinkerer at heart, so I'm always learning something
-                    new.</p>
-                <p class="text-lg col-span-2">I have over 10 years of experience in Information Technology, and have a
-                    broad understandings of various IT technology stacks and how they interoperate. In my spare time, I
-                    can usually be found:
-                </p>
-                <ul class="text-center col-span-2">
-                    <li><i class="fa-solid fa-gamepad"></i> Playing video games</li>
-                    <li><i class="fa-solid fa-laptop-code"></i> Working on some personal project</li>
-                    <li><i class="fa-solid fa-person-hiking"></i> Hiking in the Great Smoky Mountains</li>
-                </ul>
-            </div>
+    <section id="about" class="container mx-auto px-8 lg:px-32 xl:px-60">
+        <h2>About me</h2>
+        <div class="about-grid">
+            <img src="https://res.cloudinary.com/dbnugenbb/image/upload/v1644961985/Portfolio/Stephen_square.jpg"
+                alt="Photo of Stephen Mercier" class="round-image">
+            <p class="col-span-2">My name is Stephen. I am a web developer and have always been passionate
+                about learning technologies and skills. I'm a tinkerer at heart, so I'm always learning something
+                new.</p>
+            <p class="col-span-2">I have over 10 years of experience in Information Technology, and have a
+                broad understandings of various IT technology stacks and how they interoperate. In my spare time, I
+                can usually be found:
+            </p>
+            <ul class="text-center col-span-2">
+                <li><i class="fa-solid fa-gamepad"></i> Playing video games</li>
+                <li><i class="fa-solid fa-laptop-code"></i> Working on some personal project</li>
+                <li><i class="fa-solid fa-person-hiking"></i> Hiking in the Great Smoky Mountains</li>
+            </ul>
         </div>
-    </div>
+    </section>
 
-    <div id="skills" class="py-10 bg-slate-700 text-white">
+    <section id="skills">
         <div
-            class="grid grid-cols-1 md:grid-cols-2 gap-x-1 items-center justify-items-center container mx-auto px-30 xl:px-60">
-            <p class="text-4xl col-span-1 md:col-span-2 text-center">Skills</p>
+            class="grid grid-cols-1 md:grid-cols-2 gap-x-1 items-center justify-items-center container mx-auto px-8 lg:px-32 xl:px-60">
+            <h2 class="col-span-1 md:col-span-2">Skills</h2>
             <ul class="text-2xl text-center">
                 <li><i class="devicon-html5-plain colored"></i> HTML5</li>
                 <li><i class="devicon-css3-plain colored"></i> CSS3</li>
@@ -84,11 +74,11 @@
                 <li><i class="devicon-tailwindcss-plain colored"></i> TailwindCSS</li>
             </ul>
         </div>
-    </div>
+    </section>
 
-    <div id="portfolio" class="py-10 bg-slate-700 text-white">
+    <main id="portfolio" class="">
         <div class="container mx-auto px-30 xl:px-60">
-            <h2 class="text-4xl text-center">Portfolio</h2>
+            <h2>Portfolio</h2>
             <div class="grid gap-2 grid-cols-1 md:grid-cols-2">
 
                 <div class="card">
@@ -169,10 +159,10 @@
 
             </div>
         </div>
-    </div>
+    </main>
 
-    <div id="contact" class="py-10 bg-white">
-        <h2 class="text-4xl text-center">Contact</h2>
+    <section id="contact" class="pb-10">
+        <h2>Contact</h2>
         <div class="container mx-auto px-30 xl:px-60 text-8xl text-center">
             <a class="px-2 hover:text-[#313335]" href="https://github.com/balomus" target="_blank"
                 rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
@@ -183,12 +173,12 @@
             <a class="px-2 hover:text-[#00acee]" href="https://twitter.com/balomus" target="_blank"
                 rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
         </div>
-    </div>
+    </section>
 
-    <div id="footer" class="py-2 bg-black text-white text-center">
+    <footer id="footer" class="py-2 bg-black text-white text-center">
         Written and coded by <a class="underline" href="https://www.linkedin.com/in/stephen-mercier/" target="_blank"
             rel="noopener noreferrer">Stephen Mercier</a>.
-    </div>
+    </footer>
 </body>
 
 </html>

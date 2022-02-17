@@ -576,6 +576,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -721,19 +725,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(14 118 168 / var(--tw-text-opacity));
 }
 
-.hover\:text-\[\#00acee\]:hover {
-  --tw-text-opacity: 1;
-  color: rgb(0 172 238 / var(--tw-text-opacity));
-}
-
 .hover\:text-\[\#EA4335\]:hover {
   --tw-text-opacity: 1;
   color: rgb(234 67 53 / var(--tw-text-opacity));
 }
 
-.hover\:text-\[\#171515\]:hover {
+.hover\:text-\[\#00acee\]:hover {
   --tw-text-opacity: 1;
-  color: rgb(23 21 21 / var(--tw-text-opacity));
+  color: rgb(0 172 238 / var(--tw-text-opacity));
 }
 
 @media (min-width: 768px) {

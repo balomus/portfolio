@@ -1,6 +1,6 @@
 # Stephen Mercier Portfolio
 
-This is a simple React app that I created for FreeCodeCamp.org's 25 + 5 Clock project.
+This is a simple portfolio page that I created to share my work as a web developer.
 
 ## Check it out here!
 https://stephen-mercier.com/

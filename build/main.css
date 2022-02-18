@@ -623,7 +623,6 @@ section, main {
 
 .round-image {
   grid-row: span 1 / span 1;
-  margin-right: 2.5rem;
   border-radius: 9999px;
   --tw-drop-shadow: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -632,6 +631,10 @@ section, main {
 @media (min-width: 768px) {
   .round-image {
     grid-row: span 3 / span 3;
+  }
+
+  .round-image {
+    margin-right: 2.5rem;
   }
 }
 
@@ -739,8 +742,15 @@ section, main {
 .portfolio {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 8rem;
-  padding-right: 8rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .portfolio {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -799,10 +809,10 @@ section, main {
 .contact {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 8rem;
-  padding-right: 8rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   text-align: center;
-  font-size: 3.75rem;
+  font-size: 3rem;
   line-height: 1;
 }
 
@@ -810,6 +820,13 @@ section, main {
   .contact {
     font-size: 6rem;
     line-height: 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact {
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
 }
 

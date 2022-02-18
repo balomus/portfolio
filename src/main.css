@@ -47,19 +47,19 @@
     @apply grid grid-cols-1 md:grid-cols-3 gap-1 items-center justify-items-center;
   }
   .round-image {
-    @apply rounded-full mr-10 row-span-1 md:row-span-3 drop-shadow-xl;
+    @apply rounded-full md:mr-10 row-span-1 md:row-span-3 drop-shadow-xl;
   }
   .skills {
     @apply grid grid-cols-1 md:grid-cols-2 gap-x-1 items-center justify-items-center container mx-auto px-8 lg:px-32 xl:px-60;
   }
   .portfolio {
-    @apply container mx-auto px-32 xl:px-60;
+    @apply container mx-auto px-8 lg:px-32 xl:px-60;
   }
   .portfolio-grid {
     @apply grid gap-2 grid-cols-1 md:grid-cols-2;
   }
   .contact {
-    @apply container mx-auto px-32 xl:px-60 text-6xl md:text-8xl text-center;
+    @apply container mx-auto px-8 lg:px-32 xl:px-60 text-5xl md:text-8xl text-center;
   }
 }
 /* p-10 */
